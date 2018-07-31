@@ -1,7 +1,8 @@
 connection: "aws_optimizer"
 
 # include all the views
-include: "*.view"
+
+include: "/aws_costs/cost_and_usage.view.lkml"
 
 datagroup: aws_cost_test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
